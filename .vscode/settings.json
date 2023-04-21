@@ -1,0 +1,7 @@
+{
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "88"], # 최대 코드길이를 88으로 설정합니다.
+  "editor.formatOnSave": true,	# 저장할 때마다 black을 적용합니다
+}

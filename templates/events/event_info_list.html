@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block page_title %}{% endblock page_title %}
+
+
+{% block content %}
+
+
+ {% for event in events %}
+
+  <div class="ma-5">
+    <a class='h2' href="{% url 'events:event_detail' event.pk %}" class="h2">{{event.event_name}}<br> {{event.event_start_date}}<br> {{event.event_end_date}}</a>
+    <br>
+    <span class="font-italic h5">{{event.event_description}}</span>
+  </div>
+  <div class="row">
+    {% for photo in event.photos|slice:"5" %}
+    <div class="ml-5">
+      <div class="thumbnail">
+        <a href="{{photo.get_absolute_url}}">
+          <img src="photo.image_photo.url" alt="photo" style="width: 100%">
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+
+  {% endfor %}
+
+
+{% endblock content %}

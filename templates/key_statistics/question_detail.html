@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block page_title %}질문답변하기{% endblock page_title %}
+
+{% block content %}      
+  
+<div>
+  <!-- <h5>질문사항: {{question.content}} </h5> -->
+</div>
+
+  <form action="{% url 'key_statistics:AnswearCreate' pk %}" method="POST" class="post-form my-3">
+    {% csrf_token %}
+    <textarea name="content" id="content" cols="30" rows="10"></textarea>
+    <!-- {{form.as_p}} -->
+    <input type="submit" value="답변 등록" class="save btn btn-default"/>
+  </form>
+
+{% endblock content %}

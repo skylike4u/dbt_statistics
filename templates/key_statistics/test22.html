@@ -1,0 +1,81 @@
+<header>
+  <h1>Walmart Sales Dashboard</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sales</a></li>
+      <li><a href="#">Inventory</a></li>
+      <li><a href="#">Marketing</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <aside>
+    <h2>Filters</h2>
+    <form>
+      <label for="start-date">Start Date:</label>
+      <input type="date" id="start-date" name="start-date">
+      <label for="end-date">End Date:</label>
+      <input type="date" id="end-date" name="end-date">
+      <button type="submit">Apply Filters</button>
+    </form>
+  </aside>
+  
+  <section>
+    <h2>Sales Overview</h2>
+    <div class="chart">
+      <!-- Sales chart will be displayed here -->
+    </div>
+    <div class="summary">
+      <div class="total-sales">
+        <span class="label">Total Sales:</span>
+        <span class="value">$10,000</span>
+      </div>
+      <div class="average-sale">
+        <span class="label">Average Sale:</span>
+        <span class="value">$100</span>
+      </div>
+      <div class="units-sold">
+        <span class="label">Units Sold:</span>
+        <span class="value">100</span>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <h2>Inventory Overview</h2>
+    <div class="chart">
+      <!-- Inventory chart will be displayed here -->
+    </div>
+    <div class="summary">
+      <div class="total-items">
+        <span class="label">Total Items:</span>
+        <span class="value">1,000</span>
+      </div>
+      <div class="out-of-stock">
+        <span class="label">Out of Stock:</span>
+        <span class="value">50</span>
+      </div>
+      <div class="low-stock">
+        <span class="label">Low Stock:</span>
+        <span class="value">200</span>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <h2>Marketing Overview</h2>
+    <div class="chart">
+      <!-- Marketing chart will be displayed here -->
+    </div>
+    <div class="summary">
+      <div class="total-revenue">
+        <span class="label">Total Revenue:</span>
+        <span class="value">$1,000</span>
+      </div>
+      <div class="return-on-investment">
+        <span class="label">Return on Investment:</span>
+        <span class="value">10%</span>
+      </div>

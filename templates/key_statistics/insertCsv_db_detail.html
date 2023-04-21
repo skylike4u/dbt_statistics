@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+  {{InsertCsv_db.order_num}}
+{% endblock page_title %}
+
+{% block content %}
+
+<div class="container text-center">
+  <div class="row my-5">
+    <div class="col">
+      <h2>동백통 주문번호 {{revenue.order_num}}</h2>
+      <h4>주문일시: {{revenue.order_date}}, {{revenue.order_time}}</h4>
+    </div>
+    <div class="col">
+      <div>주문형태: {{revenue.order_type}}</div>
+      <div>가맹점명: {{revenue.store_name}}</div>
+      <div>사업자등록번호: {{revenue.licence_num}}</div>
+      <div>가맹점 주소: {{revenue.start_address}}</div>
+      <div>배달지 주소: {{revenue.destination_address}}</div>
+      <div>배달지 세부주소: {{revenue.destination_detailaddress}}</div>
+      <div>결제방법: {{revenue.payment_method}}</div>
+      <div>배달/픽업여부: {{revenue.pickup_ornot}}</div>
+      <div>음식/제품비용: {{revenue.order_amount}} 원</div>
+      <div>배달비용: {{revenue.delivery_fee}} 원</div>
+      <div>총 주문비용: {{revenue.total_amount}} 원</div>
+      <div>고객 연락처: {{revenue.customer_phone}}</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      2 of 3
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %}
+
